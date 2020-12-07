@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.0.0">
+	<name>Rezervácia ubytovania</name>
+	<author>Milan Kelesi</author>
+	<creationDate>March 2009</creationDate>
+	<copyright>Copyright (C) 2009 Milan Kelesi</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>kelesi@sigil.sk</authorEmail>
+	<authorUrl>www.sigil.sk</authorUrl>
+	<version>1.0.0</version>
+	<description>This module will display a search box for CotRes</description>
+	<files>
+		<filename module="mod_cotres">mod_cotres.php</filename>
+		<filename module="mod_cotres">index.html</filename>
+		<filename module="mod_cotres">helper.php</filename>
+		<filename module="mod_cotres">tmpl/default.php</filename>
+		<filename module="mod_cotres">tmpl/index.html</filename>
+	</files>
+	<params>
+		<param name="moduleclass_sfx" type="text" default="_cotres_search" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+		<param name="itemid" type="text" default="" label="Menu ItemId" description="PARAMITEMID" />
+	</params>
+	<params group="advanced">
+		<param name="cache" type="list" default="1" label="Caching" description="Select whether to cache the content of this module">
+			<option value="1">Use global</option>
+			<option value="0">No caching</option>
+		</param>
+		<param name="cache_time" type="text" default="900" label="Cache Time" description="The time before the module is recached" />
+	</params>
+</install>

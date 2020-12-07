@@ -1,0 +1,7 @@
+div.step0 { background: url('../images/timeline_intro.png8.png') no-repeat top center; }
+div.step1 { background: url('../images/timeline_step1.png8.png') no-repeat top center; }
+div.step2 { background: url('../images/timeline_step2.png8.png') no-repeat top center; }
+div.step3 { background: url('../images/timeline_step3.png8.png') no-repeat top center; }
+div.step4 { background: url('../images/timeline_step4.png8.png') no-repeat top center; }
+div.step5 { background: url('../images/timeline_step5.png8.png') no-repeat top center; }
+#timeline ul li { _width: 94px; }

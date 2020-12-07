@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5.0">
+	<name>cotres</name>
+	<!-- The following elements are optional and free of formatting conttraints -->
+	<creationDate>2009-03-02</creationDate>
+	<author>Milan Kelesi</author>
+	<authorEmail>kelesi@gmail.com</authorEmail>
+	<authorUrl>http://www.sigil.sk</authorUrl>
+	<copyright>(c) Milan Kelesi</copyright>
+	<license>License Info</license>
+	<!--  The version string is recorded in the components table -->
+	<version>1.0</version>
+	<!-- The description is optional and defaults to the name -->
+	<description>Rezervácia zrubov, chát, ízb a podobne</description>
+
+	<!-- Site Main File Copy Section -->
+	<files folder="site">
+        <filename>contentelement/cotres_config.xml</filename>
+        <filename>contentelement/cotres_cottages.xml</filename>
+        <filename>contentelement/cotres_seasons.xml</filename>
+        <filename>controller.php</filename>
+        <filename>controllers/index.html</filename>
+        <filename>controllers/orderfe.php</filename>
+        <filename>controllers/payments.php</filename>
+        <filename>cotres.php</filename>
+        <filename>css/cotres.css</filename>
+        <filename>css/cotres_ie6.css</filename>
+        <filename>css/index.html</filename>
+        <filename>css/required.gif</filename>
+        <filename>emailing/banktransfer.en-GB.txt</filename>
+        <filename>emailing/banktransfer.sk-SK.txt</filename>
+        <filename>emailing/email.en-GB.txt</filename>
+        <filename>emailing/email.sk-SK.txt</filename>
+        <filename>emailing/index.html</filename>
+        <filename>helper.php</filename>
+        <filename>images/bluebox_bg.png</filename>
+        <filename>images/cal_button.png</filename>
+        <filename>images/cal_th_bg.png</filename>
+        <filename>images/cotres_intro_bg.png</filename>
+        <filename>images/cotres_step2middle_bg.png</filename>
+        <filename>images/cotres_step2top_bg.png</filename>
+        <filename>images/cr_phone_res_bg.png</filename>
+        <filename>images/payments.png</filename>
+        <filename>images/timeline_intro.png</filename>
+        <filename>images/timeline_intro.png8.png</filename>
+        <filename>images/timeline_step1.png</filename>
+        <filename>images/timeline_step1.png8.png</filename>
+        <filename>images/timeline_step2.png</filename>
+        <filename>images/timeline_step2.png8.png</filename>
+        <filename>images/timeline_step3.png</filename>
+        <filename>images/timeline_step3.png8.png</filename>
+        <filename>images/timeline_step4.png</filename>
+        <filename>images/timeline_step4.png8.png</filename>
+        <filename>images/timeline_step5.png</filename>
+        <filename>images/timeline_step5.png8.png</filename>
+        <filename>index.html</filename>
+        <filename>models/calendarfe.php</filename>
+        <filename>models/config.php</filename>
+        <filename>models/cotres.php</filename>
+        <filename>models/index.html</filename>
+        <filename>models/orderfe.php</filename>
+        <filename>models/pricelist.php</filename>
+        <filename>payments/cardpay.php</filename>
+        <filename>payments/cardpay.class.php</filename>
+        <filename>payments/cardpay.return.php</filename>
+        <filename>payments/index.html</filename>
+        <filename>payments/paypal.php</filename>
+        <filename>payments/paypal.class.php</filename>
+        <filename>tables/config.php</filename>
+        <filename>tables/cottages.php</filename>
+        <filename>tables/index.html</filename>
+        <filename>tables/orderdetails.php</filename>
+        <filename>tables/orders.php</filename>
+        <filename>tables/prices.php</filename>
+        <filename>tables/seasons.php</filename>
+        <filename>views/calendarfe/index.html</filename>
+        <filename>views/calendarfe/tmpl/default.php</filename>
+        <filename>views/calendarfe/tmpl/index.html</filename>
+        <filename>views/calendarfe/view.html.php</filename>
+        <filename>views/cotres/index.html</filename>
+        <filename>views/cotres/tmpl/default.php</filename>
+        <filename>views/cotres/tmpl/index.html</filename>
+        <filename>views/cotres/view.html.php</filename>
+        <filename>views/index.html</filename>
+        <filename>views/orderstep1/index.html</filename>
+        <filename>views/orderstep1/tmpl/default.php</filename>
+        <filename>views/orderstep1/tmpl/index.html</filename>
+        <filename>views/orderstep1/view.html.php</filename>
+        <filename>views/orderstep2/index.html</filename>
+        <filename>views/orderstep2/tmpl/default.php</filename>
+        <filename>views/orderstep2/tmpl/index.html</filename>
+        <filename>views/orderstep2/view.html.php</filename>
+        <filename>views/orderstep3/index.html</filename>
+        <filename>views/orderstep3/tmpl/default.php</filename>
+        <filename>views/orderstep3/tmpl/index.html</filename>
+        <filename>views/orderstep3/view.html.php</filename>
+        <filename>views/orderstep5/index.html</filename>
+        <filename>views/orderstep5/tmpl/default.php</filename>
+        <filename>views/orderstep5/tmpl/index.html</filename>
+        <filename>views/orderstep5/view.html.php</filename>
+        <filename>views/pricelist/index.html</filename>
+        <filename>views/pricelist/tmpl/default.php</filename>
+        <filename>views/pricelist/tmpl/index.html</filename>
+        <filename>views/pricelist/view.html.php</filename>
+	</files>
+    <languages folder="site/language">
+        <language tag="sk-SK">sk-SK.com_cotres.ini</language>
+        <language tag="en-GB">en-GB.com_cotres.ini</language>
+    </languages>
+
+	<install>
+		<sql>
+			<file charset="utf8" driver="mysql">install.sql</file>
+		</sql>
+	</install>
+	<uninstall>
+		<sql>
+			<file charset="utf8" driver="mysql">uninstall.sql</file>
+		</sql>
+	</uninstall>
+
+	<administration>
+		<!-- Administration Menu Section -->
+		<menu img="components/com_cotres/images/cotres.png">Rezervácia Zrubov</menu>
+		<submenu>
+			<!-- Note that all & must be escaped to &amp; for the file to be valid XML and be parsed by the installer -->
+            <menu link="option=com_cotres&amp;type=calendar" img="components/com_cotres/images/cal_button.png">Kalendár obsadenosti</menu>
+            <menu link="option=com_cotres&amp;type=orders">Objednávky</menu>
+            <menu link="option=com_cotres&amp;type=cottages">Zruby/Izby</menu>
+			<menu link="option=com_cotres&amp;type=seasons">Cenové sezóny</menu>
+			<menu link="option=com_cotres&amp;type=config" img="../images/config.png">Nastavenia</menu>
+		</submenu>
+		<!-- Administration Main File Copy Section -->
+		<!-- Note the folder attribute: This attribute describes the folder
+			to copy FROM in the package to install therefore files copied
+			in this section are copied from /admin/ in the package -->
+		<files folder="admin">
+			<!-- Site Main File Copy Section -->
+            <filename>controller.php</filename>
+            <filename>controllers/config.php</filename>
+            <filename>controllers/cottage.php</filename>
+            <filename>controllers/index.html</filename>
+            <filename>controllers/order.php</filename>
+            <filename>controllers/season.php</filename>
+            <filename>cotres.php</filename>
+            <filename>css/cotres.css</filename>
+            <filename>css/required.gif</filename>
+            <filename>helper.php</filename>
+            <filename>images/cal_button.png</filename>
+            <filename>images/check_icon.png</filename>
+            <filename>images/cotres.png</filename>
+            <filename>images/cross_icon.png</filename>
+            <filename>images/hours_left.gif</filename>
+            <filename>images/hours_left.png</filename>
+            <filename>index.html</filename>
+            <filename>install.sql</filename>
+            <filename>models/calendar.php</filename>
+            <filename>models/config.php</filename>
+            <filename>models/cottage.php</filename>
+            <filename>models/cottages.php</filename>
+            <filename>models/index.html</filename>
+            <filename>models/order.php</filename>
+            <filename>models/orders.php</filename>
+            <filename>models/season.php</filename>
+            <filename>models/seasons.php</filename>
+            <filename>tables/config.php</filename>
+            <filename>tables/cottages.php</filename>
+            <filename>tables/index.html</filename>
+            <filename>tables/orderdetails.php</filename>
+            <filename>tables/orders.php</filename>
+            <filename>tables/prices.php</filename>
+            <filename>tables/seasons.php</filename>
+            <filename>uninstall.sql</filename>
+            <filename>views/calendar/index.html</filename>
+            <filename>views/calendar/tmpl/default.php</filename>
+            <filename>views/calendar/tmpl/index.html</filename>
+            <filename>views/calendar/view.html.php</filename>
+            <filename>views/config/index.html</filename>
+            <filename>views/config/tmpl/default.php</filename>
+            <filename>views/config/tmpl/index.html</filename>
+            <filename>views/config/view.html.php</filename>
+            <filename>views/cottage/index.html</filename>
+            <filename>views/cottage/tmpl/form.php</filename>
+            <filename>views/cottage/tmpl/index.html</filename>
+            <filename>views/cottage/view.html.php</filename>
+            <filename>views/cottages/index.html</filename>
+            <filename>views/cottages/tmpl/default.php</filename>
+            <filename>views/cottages/tmpl/index.html</filename>
+            <filename>views/cottages/view.html.php</filename>
+            <filename>views/order/index.html</filename>
+            <filename>views/order/tmpl/edit_order.php</filename>
+            <filename>views/order/tmpl/index.html</filename>
+            <filename>views/order/view.html.php</filename>
+            <filename>views/orders/index.html</filename>
+            <filename>views/orders/tmpl/default.php</filename>
+            <filename>views/orders/tmpl/index.html</filename>
+            <filename>views/orders/view.html.php</filename>
+            <filename>views/season/index.html</filename>
+            <filename>views/season/tmpl/form.php</filename>
+            <filename>views/season/tmpl/index.html</filename>
+            <filename>views/season/view.html.php</filename>
+            <filename>views/seasons/index.html</filename>
+            <filename>views/seasons/tmpl/default.php</filename>
+            <filename>views/seasons/tmpl/index.html</filename>
+            <filename>views/seasons/view.html.php</filename>
+
+		</files>
+        <languages folder="admin/language">
+            <language tag="cz-CZ">cz-CZ.com_cotres.ini</language>
+            <language tag="sk-SK">sk-SK.com_cotres.ini</language>
+            <language tag="en-GB">en-GB.com_cotres.ini</language>
+        </languages>
+	</administration>
+</install>

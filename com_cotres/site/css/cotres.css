@@ -1,0 +1,78 @@
+.red { color: #ff0005;}
+.underline { text-decoration: underline; }
+.bold { font-weight: bold !important; }
+
+.cotres_box { margin: 0 auto; color: black; padding: 23px; }
+.cotres_box h1 { margin:0; margin-bottom: 30px; font-size: 16px; font-weight: normal; }
+.cotres_box a { color: #ff0005 !important; text-decoration: underline; }
+.cotres_box .padding {  }
+
+#cotres_intro { height: 266px; background: url('../images/cotres_intro_bg.png') repeat-x top left; }
+#cotres_intro, #step2top { border: 1px solid #a75611; }
+#step2top { background: url('../images/cotres_step2top_bg.png') repeat-x top left; }
+#step2top b { margin-right: 15px; width: 100px; }
+
+#step2middle, #step2bottom { background: url('../images/cotres_step2middle_bg.png') #b7cfe1 repeat-x top left; }
+#step2middle table { width: 50%; float:left; text-align: left;}
+#step2middle .policy { padding : 2px; }
+#step2middle td.key { padding-right: 10px; white-space: nowrap; height: 30px; width: 1%; }
+#step2middle input.text_area { width: 150px; }
+#step3middle { color: #67737b; }
+#step3middle label { color: black; }
+#step5middle { height: 150px; margin-top: 2px;}
+
+/* TIMELINES */
+#timeline { width: 505px; margin: 0 auto; height:40px; margin-bottom: 32px; padding: 0; }
+#timeline ul { margin-top: 18px; display: block; width: 505px; }
+#timeline ul li { list-style-type: none !important; list-style-image: none !important;  font-size: 14px; float: left; width: 96px; text-align: center;}
+
+div.step0 { background: url('../images/timeline_intro.png') no-repeat top center; }
+div.step1 { background: url('../images/timeline_step1.png') no-repeat top center; }
+div.step2 { background: url('../images/timeline_step2.png') no-repeat top center; }
+div.step3 { background: url('../images/timeline_step3.png') no-repeat top center; }
+div.step4 { background: url('../images/timeline_step4.png') no-repeat top center; }
+div.step5 { background: url('../images/timeline_step5.png') no-repeat top center; }
+
+.box1, #cr_phone_res, #step2middle, #step2bottom { border: 1px solid #79a7ce;}
+.box1 { height: 23px; line-height: 23px;  padding-left: 10px; position: relative; }
+.bluebox { background: url('../images/bluebox_bg.png') repeat-x top left;  }
+.greenbox, .pinkbox { font-weight: bold; }
+.box1 span.right { position: absolute; right: 10px;}
+#cr_phone_res { height: 76px; margin-top: 18px; background: url('../images/cr_phone_res_bg.png') repeat-x top left;}
+
+#timeline .marked { font-weight: bold; }
+#cotres_intro p {  }
+#step2bottom { font-weight: bold; }
+#step2bottom input { margin-right: 15px; }
+
+/* CALENDAR - BEGIN*/
+#calendar a {  color: #ff0005 !important; text-decoration: none !important; }
+.calendarlist { border-collapse: collapse; text-align: center; width: 100%;}
+.calendarlist td, .calendarlist th, #cal_months { border: 1px solid #82a7cb; text-align: center; height: 23px; }
+.calendarlist th, #cal_months { background: url('../images/cal_th_bg.png') #b3cbdd repeat-x top left; }
+.calendarlist tr.row1 td { background-color: #eff3ef; }
+.calendarlist tr:hover td { background-color: #ffffdd; }
+
+#cal_months { padding: 2px; height: 19px; line-height: 19px; font-weight:bold; text-align: left; margin-bottom: 22px; font-size: 12px; }
+#cal_months a.selected { font-weight: bold; text-decoration: underline !important; }
+#cal_months span { margin-left: 20px; font-weight: normal; }
+
+#cal_years { text-align: center; font-weight: bold; height: 20px; }
+#cal_footer { text-align: center; height: 22px; line-height: 22px; margin-top: 15px; }
+#cal_footer span { margin-left: 25px; }
+#cal_footer img, .calendarlist img { vertical-align: middle; margin-right: 5px; }
+#cal_descr { text-align: left; margin: 0 auto; margin-top: 15px; }
+/* CALENDAR - END*/
+
+td.col1 { font-weight: bold; }
+td.col2 { background-color: white; }
+td.col3, .greenbox { background: #e0f6e1; }
+td.col4, .pinkbox { background: #f6e0e5; }
+td.col5 { width: 1%; }
+div.separator { height: 20px; }
+
+div.submitbuttons { position: relative; height: 20px; }
+div.submitbuttons .right { position: absolute; right: 0; }
+
+div.policy { width: 295px; height: 105px; overflow-x: hidden; overflow-y: auto; white-space: normal;}
+div.policy { border: 1px solid #818181; background-color: white; }

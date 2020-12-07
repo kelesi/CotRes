@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<joomfish type="contentelement">
+  <name>CotRes - Config</name>
+  <author>Milan Kelesi</author>
+  <version>2.0</version>
+  <description>Definition for the CotRes component</description>
+  <reference>
+  	<table name="cotres_config">
+  		<field type="referenceid" name="id" translate="0">ID</field>
+  		<field type="titletext" name="id" translate="0">Config ID</field>
+  		<field type="textarea" name="payment_info" translate="1">Payment Info</field>
+  	</table>
+  </reference>
+</joomfish>

@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<joomfish type="contentelement">
+  <name>CotRes - Seasons</name>
+  <author>Milan Kelesi</author>
+  <version>2.0</version>
+  <description>Definition for the CotRes component - Seasons table</description>
+  <reference>
+  	<table name="cotres_seasons">
+  		<field type="referenceid" name="id" translate="0">ID</field>
+  		<field type="titletext" name="name" translate="1">Name</field>
+  	</table>
+  </reference>
+</joomfish>

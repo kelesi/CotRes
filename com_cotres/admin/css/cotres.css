@@ -1,0 +1,23 @@
+input.required, select.required option:first-child { background: url('required.gif') no-repeat center right; }
+img.calendar, button { cursor: pointer; }
+input[disabled] { background-color: lightgrey; background-image: none; color: black; }
+input.invalid, select.invalid * { background-color: red; }
+
+/* CALENDAR */
+calendar a {  color: #ff0005 !important; text-decoration: none !important; }
+.calendarlist { border-collapse: collapse; text-align: center; width: 100%; }
+.calendarlist td, .calendarlist th, #cal_months { border: 1px solid #82a7cb  !important; text-align: center; height: 23px; }
+.calendarlist th, #cal_months { background: url('../images/cal_th_bg.png') #b3cbdd repeat-x top left; }
+.calendarlist tr.row1 td { background-color: #eff3ef;  }
+.calendarlist tr:hover td { background-color: #ffffdd; }
+.calendarlist,#cal_months, #cal_years, #cal_footer  { width: 600px !important; }
+
+#cal_months { padding: 2px; height: 19px; line-height: 19px; font-weight:bold; text-align: left; margin-bottom: 22px; font-size: 12px; }
+#cal_months a.selected { font-weight: bold; text-decoration: underline !important; }
+#cal_months span { margin-left: 20px; font-weight: normal; }
+
+#cal_years { text-align: center; font-weight: bold; height: 20px; }
+#cal_footer { text-align: center; height: 22px; line-height: 22px; margin-top: 25px; }
+#cal_footer span { margin-left: 25px; }
+#cal_footer img, .calendarlist img { vertical-align: middle; margin-right: 5px; }
+/* CALENDAR - END*/

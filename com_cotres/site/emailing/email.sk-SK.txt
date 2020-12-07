@@ -1,0 +1,40 @@
+Dobrý deň,
+
+Ďakujeme, že ste využili naše služby a prajeme Vám príjemný pobyt. Prosím skontrolujte správnosť údajov Vašej objednávky. V prípade nejasností nás prosím neváhajte kontaktovať na adrese zrubybystra@mvsas.sk
+
+Vaše rezervačné údaje:
+
+Číslo objednávky: <order_number>
+Dátum a čas vytvorenia objednávky: <created>
+
+Termín ubytovania <date_from> až <date_to>
+Zruby: <cottages>
+
+Názov firmy:<company_name>
+IČO: <ico>
+DIČ: <dic>
+Kontaktná osoba: <contact_person>
+Meno: <fname>
+Priezvisko: <lname>
+Ulica: <street>
+Mesto: <city>
+PSČ: <zip>
+Krajina: <country>
+Telefón: <phone>
+Email: <email>
+Fax: <fax>
+
+Cena za zrub(y)/sezona:
+<prices>
+
+Sposob uhrady: <payment_type>
+Stav objednavky: <status>
+<reservation_fee>
+Doplatok po prichode na rekreaciu <topay>
+
+<banktransfer_text>
+
+===============================================================
+Ďalšie informácie:
+
+<module_by_email>

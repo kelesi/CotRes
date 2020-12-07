@@ -1,0 +1,6 @@
+
+Ak nebude rezervačný poplatok uhradený do <hours_left>, inak bude objednávka zmazaná.
+
+Bankové spojenie na realizáciu platby:
+<payment_info>
+Variabilný symbol: <order_number>
